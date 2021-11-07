@@ -14,7 +14,6 @@
         "symfony/runtime": "5.3.*",
         "symfony/twig-bundle": "5.3.*",
         "symfony/yaml": "5.3.*",
-        "symplify/symfony-static-dumper": "^9.4",
         "twig/extra-bundle": "^3.3",
         "twig/twig": "^3.3"
     }
