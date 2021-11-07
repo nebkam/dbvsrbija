@@ -14,6 +14,9 @@
     "roave/security-advisories": {
         "version": "dev-latest"
     },
+    "symfony/asset": {
+        "version": "v5.3.4"
+    },
     "symfony/cache": {
         "version": "v5.3.10"
     },
