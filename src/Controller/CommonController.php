@@ -7,7 +7,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class IndexController extends AbstractController
+class CommonController extends AbstractController
 	{
 	#[Route('/', methods: [Request::METHOD_GET])]
 	public function index(): Response
