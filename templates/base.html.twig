@@ -2,19 +2,22 @@
 <html lang="sr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
-
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
+        <title>{% block title %}Dobrodošli{% endblock %}</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+        <link href="{{ asset('common.css') }}" rel="stylesheet" media="screen">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-    <img src="{{ asset('gfx/dbv-logo-127x65.png') }}" alt="DBVSrbija logo" />
+    <nav>
+        <img src="{{ asset('gfx/dbv-logo-127x65.png') }}" width="127" height="65" alt="DBVSrbija logo" />
+        <a href="{{ path('app_index_index') }}">Početna</a>
+        <a href="{{ path('app_index_products') }}">Proizvodi</a>
+        <a href="{{ path('app_index_about') }}">O nama</a>
+    </nav>
         {% block body %}{% endblock %}
     </body>
 </html>

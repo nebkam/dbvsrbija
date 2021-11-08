@@ -1,0 +1,26 @@
+ body {
+	 background-color: #ccc;
+	 margin: 0;
+ }
+nav {
+	background-color: #fff;
+	padding: 1em;
+
+}
+nav img {
+	display: block;
+	margin: 0 auto;
+}
+nav a,
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+	display: block;
+	color: #008b3b;
+	font-family: 'Alatsi', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
