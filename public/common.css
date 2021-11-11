@@ -27,6 +27,9 @@ nav a:active {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+nav a.active {
+	color: #0b592c;
+}
 
 @media only screen and (min-width: 600px) {
 	nav {

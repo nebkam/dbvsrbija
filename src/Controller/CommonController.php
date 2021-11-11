@@ -12,18 +12,18 @@ class CommonController extends AbstractController
 	#[Route('/', methods: [Request::METHOD_GET])]
 	public function index(): Response
 		{
-		return $this->render('index.html.twig');
+		return $this->render('index.html.twig', ['section' => 'home']);
 		}
 
 	#[Route('/proizvodi', methods: [Request::METHOD_GET])]
 	public function products(): Response
 		{
-		return $this->render('products.html.twig');
+		return $this->render('products.html.twig', ['section' => 'products']);
 		}
 
 	#[Route('/o-nama', methods: [Request::METHOD_GET])]
 	public function about(): Response
 		{
-		return $this->render('about.html.twig');
+		return $this->render('about.html.twig', ['section' => 'about']);
 		}
 	}
