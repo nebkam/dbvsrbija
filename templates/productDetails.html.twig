@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-	{{ dump(product) }}
+	<h1>{{ product.title }}</h1>
+	<p>{{ product.description|nl2br }}</p>
 {% endblock %}
