@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="sr">
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Dobrodošli{% endblock %}</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
-        <link href="{{ asset('common.css') }}" rel="stylesheet" media="screen">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet" media="screen">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-    <nav>
-        <img src="{{ asset('gfx/dbv-logo-127x65.png') }}" width="127" height="65" alt="DBVSrbija logo" />
-        <a href="{{ path('app_common_index') }}" class="{{ section == 'home' ? 'active' }}">Početna</a>
-        <a href="{{ path('app_common_products') }}" class="{{ section == 'products' ? 'active' }}">Proizvodi</a>
-        <a href="{{ path('app_common_about') }}" class="{{ section == 'about' ? 'active' }}">O nama</a>
-    </nav>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Dobrodošli{% endblock %}</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon-16x16.png') }}">
+	<link href="{{ asset('common.css') }}" rel="stylesheet" media="screen">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext&display=swap" rel="stylesheet"
+		  media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav>
+	<img src="{{ asset('gfx/dbv-logo-127x65.png') }}" width="127" height="65" class="logo" alt="DBVSrbija logo"/>
+	<a href="{{ path('app_common_index') }}" class="nav-link {{ section == 'home' ? 'active' }}">Početna</a>
+	<a href="{{ path('app_common_products') }}" class="nav-link {{ section == 'products' ? 'active' }}">Proizvodi</a>
+	<a href="{{ path('app_common_about') }}" class="nav-link {{ section == 'about' ? 'active' }}">O nama</a>
+</nav>
+{% block body %}{% endblock %}
+</body>
 </html>
